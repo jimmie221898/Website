@@ -17,10 +17,47 @@
             border-radius: 8px;
             background-color: #f0f0f0;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #007BFF;
+            color: white;
+        }
 </style>
 </head>
 <body>
     <h1>James Byrne</h1>
     <p>Welcome To My Site!</p>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="#Page1">Page1</a>
+            <a href="#Page2">Page2</a>
+            <a href="#Page3">Page3</a>
+        </div>
 </body>
 </html>
